@@ -1,0 +1,275 @@
+@media (max-width: 768px) {
+  .video-player {
+    width: 100%;
+    background: 0 0;
+  }
+  .video-player iframe {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    margin: auto;
+  }
+  #frame {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    margin: auto;
+  }
+}
+
+* {
+  font-family: helvetica, arial, sans-serif;
+}
+
+body {
+  font-size: 16px;
+}
+
+.fb-comments {
+  border: 1px solid #e9ebee;
+  border-radius: 3px;
+  padding: 0 15px;
+  padding-bottom: 15px;
+  margin: auto;
+  position: relative;
+  color: #4267b2;
+}
+
+.fb-comments-header {
+  padding: 15px 0;
+  border-bottom: 1px solid #e9ebee;
+}
+
+.fb-comments-header span {
+  color: #000;
+  font-weight: 700;
+  font-size: 0.9em;
+}
+
+.fb-comments-comment {
+  border: none;
+  padding: 0;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.fb-comments-reply-wrapper {
+  margin-left: 60px;
+  border-left: 1px dotted #e9ebee;
+  padding-left: 5px;
+}
+
+tr,
+td {
+  border: none;
+  margin: 0;
+}
+
+td {
+  padding: 2.5px;
+}
+
+tr {
+  padding: 2.5px 0;
+}
+
+.fb-comments-comment-img {
+  vertical-align: top;
+  width: 48px;
+  padding-right: 5px;
+}
+
+.fb-comments-comment-img img {
+  max-width: 48px;
+  border-radius: 25px;
+}
+
+.fb-comments-comment-name {
+  font-size: 0.85em;
+}
+
+.fb-comments-comment-name name {
+  color: #365899;
+  text-decoration: none;
+  font-weight: 700;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.fb-comments-comment-name name:hover {
+  text-decoration: underline;
+}
+
+.fb-comments-comment-name occupation {
+  color: #90949c;
+}
+
+.fb-comments-comment-text {
+  font-size: 0.9em;
+  color: #000;
+  border-radius: 21px;
+  background-color: #eaebef;
+  padding: 10px 20px;
+}
+
+.fb-comments-comment-actions like,
+.fb-comments-comment-actions reply {
+  font-size: 0.75em;
+  color: #4267b2;
+  text-decoration: none;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.fb-comments-comment-actions like.liked {
+  color: #90949c;
+}
+
+.fb-comments-comment-actions like:hover,
+.fb-comments-comment-actions reply:hover {
+  text-decoration: underline;
+}
+
+.fb-comments-comment-actions likes {
+  font-size: 13px;
+  background: url('data:image/png;base64,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') no-repeat scroll 15px 4px;
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  padding-left: 43px;
+  padding-right: 6px;
+  padding-top: 3px;
+  padding-bottom: 2px;
+  margin-top: -10px;
+  float: right;
+  background-color: #fff;
+  border: solid #eaebef;
+  border-radius: 19px;
+}
+
+.fb-comments-comment-actions date {
+  font-size: 0.75em;
+  color: #90949c;
+  text-decoration: none;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.fb-comments-comment-actions date:hover {
+  text-decoration: underline;
+}
+
+.fb-comments-loadmore {
+  background: #4080ff;
+  border: 1px solid #4080ff;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 14px;
+  padding: 0.875em;
+  text-shadow: none;
+  width: 100%;
+  font-weight: 700;
+  cursor: hand;
+  cursor: pointer;
+}
+
+.fb-reply-input {
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  width: 100%;
+  padding: 5px 7.5px;
+  font-size: 0.75em;
+  color: #000;
+  outline: none;
+}
+
+.fb-reply-input:hover,
+.fb-reply-button:hover {
+  outline: none;
+}
+
+.fb-reply-button {
+  background: #4080ff;
+  border: 1px solid #4080ff;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 0.75em;
+  padding: 5px 7.5px;
+  text-shadow: none;
+  width: 100%;
+  font-weight: 700;
+  cursor: hand;
+  cursor: pointer;
+  outline: none;
+}
+
+.bbtn {
+  width: 100%;
+  max-width: 449px;
+}
+
+@media (max-width: 768px) {
+  .video-player {
+    margin-top: 0 !important;
+  }
+}
+
+.a-btn {
+      text-decoration: none;
+      -webkit-font-smoothing: antialiased;
+      margin: 0;
+      border: 0; 
+      font: inherit; 
+      vertical-align: baseline;
+      color: #2e82bc; 
+      outline: 0; 
+      line-height: 1; 
+      text-align: center; 
+      position:relative!important; display: inline-block!important;
+      border-style: solid; 
+      width: 100%; padding-left: 0!important; padding-right: 0!important; 
+      margin-bottom: 10px; 
+      padding: 22px 44px; border-color: #ff5535; border-width: 0px; 
+      border-radius: 6px; 
+      background: linear-gradient(to bottom, #ff6600 0%, #ff5535 100%); 
+      box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.5); 
+      text-decoration: none!important;
+    }
+    .span-btn {
+      text-decoration: none;
+      -webkit-font-smoothing: antialiased; 
+      text-align: center;
+      margin: 0; 
+      border: 0; 
+      font: inherit;
+      vertical-align: baseline;
+      display: block; 
+      position: relative; 
+      z-index: 1; 
+      padding: 0 15px; 
+      white-space: normal; 
+      font-size: 25px;
+      color: #ffffff; 
+      font-family: Oswald; 
+      font-weight: bold; 
+      text-shadow: #000000 0px 1px 0px;
+      text-decoration: none;
+    }
+    .span-btn2 {
+      -webkit-font-smoothing: antialiased; 
+      text-align: center;
+      padding: 0; border: 0;
+      font: inherit; 
+      vertical-align: baseline; 
+      display: block; 
+      position: relative;
+      z-index: 1; 
+      margin: .2em 0 -.5em; 
+      font-size: 15px; 
+      color: #f5e051; 
+      font-family: Cabin; 
+      font-weight: bold; 
+      font-style: italic;
+      text-shadow: #000000 0px 1px 0px;
+    }
