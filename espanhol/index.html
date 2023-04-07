@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Progama Temperatura Rápida Contra Gordura</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <main>
+        <section class="home" style="background-color: #5d5e5e;">
+            <!-- Aqui fica a headline, vídeo de VSL, o primeiro botão de call to action e o contador de pessoas -->
+            <div class="container text-center text-light pb-5">
+                <!-- Essa parte aqui é da contagem, se quiser pode mudar o número de pessoas manualmente, só não mude a data pq ela se atualiza sozinha-->
+                <div class="contage pt-5">
+                    <p class="fw-semibold" style="color: #fff; text-weight: 900;"><b id="contage" class="text-warning">237</b> pessoas estão assistindo a esse vídeo. Devido à alta demanda de acessos, garantimos a apresentação somente até <b id="date" class="text-warning">01/02/2023</b></p><b>
+                </div>
+                <!-- Aqui é a headline, essa é só uma aleatória, coloque a que achar melhorr -->
+                <div class="headline">
+                    <h1 class="text-warning p-3"></h1>
+                </div>
+                <!-- Aqui você pode alterar a cor do brilho, e colar o vídeo dentro dessa div -->
+                <div class="vsl m-auto" style="box-shadow: 0 0 15px #FFC107;">
+
+                 <div id="vid_642a873454bccc000906c2be" style="position:relative;width:100%;padding: 56.25% 0 0;"><img id="thumb_642a873454bccc000906c2be" src="https://images.converteai.net/b00527df-aeee-4792-8d00-f0155b494fda/players/642a873454bccc000906c2be/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_642a873454bccc000906c2be" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_642a873454bccc000906c2be">var s=document.createElement("script");s.src="https://scripts.converteai.net/b00527df-aeee-4792-8d00-f0155b494fda/players/642a873454bccc000906c2be/player.js",s.async=!0,document.head.appendChild(s);</script>
+                </div>
+                <!-- Essa div aqui é do botão de call to action -->
+                <div class="buttonAct d-none text-center m-auto mt-5" id="cta1">
+                    <a href="https://pay.kiwify.com.br/JUuyyD5" target="_blank" class="btn w-100 rounded-5 fs-4 fw-semibold text-uppercase" style="background-color: #f5f101;">Quero o Progama Temperatura</a>
+                </div>        
+            </div>
+        </section>
+    </main>
+    <!-- Aqui é o rodapé do site, como eu não tenho as páginas de termos de uso/privacidade vou deixar os links funcionando pra você colocar, acredito que consiga -->
+    <footer class="footer" style="background-color: #5d5e5e;">
+        <div class="container text-light p-3 text-center">
+            <div class="copyright">
+                <p class="m-0 fw-semibold">Copyright 2023 — Progama Temperatura Rápida Contra Gordura ®</p>
+                <p class="fw-semibold">Todos os Direitos Reservados</p>
+            </div>   
+            <div class="terms my-3 d-flex gap-1 justify-content-center align-items-center">
+                <a href="" target="_blank" class="text-decoration-none text-light">Termos de uso</a>
+                <p class="m-0">-</p>
+                <a href=""target="_blank" class="text-decoration-none text-light">Privacidade</a>
+            </div>   
+            <div class="textFb w-75 m-auto">
+                <p>
+                
+                </p>
+            </div>     
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        let minutes = 22.02 //  quantidade de minutos para a liberação do call to action, só alterar essa parte e colocar o número de minutos que deseja, obs: Não coloque os minutos assim 27:02, coloque 27.02 ou o número que desejar
+  
+        setTimeout(() => {document.getElementById("cta1").classList.remove("d-none"); document.getElementById("cta2").classList.remove("d-none")}, minutes * 60000);
+  </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
